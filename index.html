@@ -99,10 +99,10 @@
     </header>
 
     <div class="container">
-        <h1>Accesso Protetto</h1>
-        <p>Inserisci la password per accedere al contenuto:</p>
+        <h1>Protected Access</h1>
+        <p>Enter the password to access the content:</p>
         <input type="password" id="password" placeholder="Password">
-        <button onclick="checkPassword()">Accedi</button>
+        <button onclick="checkPassword()">Get Access</button>
         <p id="message"></p>
     </div>
 
@@ -121,10 +121,10 @@
 
             if (password === correctPassword) {
                 message.className = 'success';
-                message.innerHTML = 'Accesso consentito! Puoi scaricare i file: <a href="https://drive.google.com/drive/folders/16ZuAfNRCXVc_WyxaDJvtKbh8fgb8bQ7F?usp=sharing" target="_blank" style="color: #4dff4d;">Download</a>';
+                message.innerHTML = 'Access allowed! You can download the file: <a href="https://drive.google.com/drive/folders/16ZuAfNRCXVc_WyxaDJvtKbh8fgb8bQ7F?usp=sharing" target="_blank" style="color: #4dff4d;">Download</a>';
             } else {
                 message.className = 'error';
-                message.innerHTML = 'Password errata. Riprova.';
+                message.innerHTML = 'Wrong password. Retry.';
             }
         }
     </script>
